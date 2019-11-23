@@ -1,22 +1,10 @@
 {
   "users": [
     {
-      "id": "998be744-5933-4c73-9f77-240b460b57f2",
-      "name": "eer",
-      "email": "'r]r]",
-      "phone": "13232"
-    },
-    {
-      "id": "107df046-c12b-4e61-8943-4db724d759fc",
-      "name": "ronal",
-      "email": "sala@gmail.com",
-      "phone": "239939"
-    },
-    {
-      "id": "c4742ab5-b8e2-495a-bb85-d50dfdfdb8a5",
-      "name": "oliviel valdez",
-      "email": "olivielultimate@gmail.com",
-      "phone": "1213"
+      "id": "3b5e91fb-9be1-408b-83f9-8ae1a80b492b",
+      "name": "test ",
+      "email": "test@gmail.com",
+      "phone": "13354"
     }
   ]
 }

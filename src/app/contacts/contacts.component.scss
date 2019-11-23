@@ -9,6 +9,10 @@ h1 {
   flex-direction: column;
 }
 
+.container * {
+  margin: 0 2rem;
+}
+
 .test {
   padding: 2rem;
 }
