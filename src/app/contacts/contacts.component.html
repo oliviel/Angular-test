@@ -1,0 +1,57 @@
+<div class="container">
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <br>
+    <br>
+    <mat-form-field>
+      <input type="text"  name="name"  matInput placeholder="Name" [(ngModel)]="userModel.name">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="email" name="email" matInput placeholder="email" [(ngModel)]="userModel.email">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="tel" name="phone" matInput placeholder="phone" [(ngModel)]="userModel.phone">
+    </mat-form-field>
+    <button type="submit" mat-raised-button	color="primary">Submit</button>
+  </form>
+</div>
+
+<div class="test">
+    <h1>My users</h1>
+    <mat-card *ngFor="let user of users" class="mb-10 backgroud accent row" >
+     <div *ngIf="toggleBtn.checked">
+        <form #userForm="ngForm">
+            <mat-form-field>
+              <input type="text" name="name" matInput placeholder="Name" [(ngModel)]="userModel.name">
+            </mat-form-field>
+            <mat-form-field>
+              <input type="email" name="email" matInput placeholder="email" [(ngModel)]="userModel.email">
+            </mat-form-field>
+            <mat-form-field>
+              <input type="tel" name="phone" matInput placeholder="phone" [(ngModel)]="userModel.phone">
+            </mat-form-field>
+            <button type="submit" mat-raised-button	color="primary">Submit</button>
+          </form>
+     </div>
+     <div *ngIf="!toggleBtn.checked">
+        <strong>Name: </strong> {{ user.name }},
+        <strong>Email: </strong> {{ user.email }},
+        <strong>Phone: </strong> {{ user.phone }},
+     </div>
+     <mat-button-toggle #toggleBtn color="accent">
+       Edit
+     </mat-button-toggle>
+     <button (click)="onDelete(user)"  type="submit" mat-raised-button	color="warn">
+      Delete
+      </button>
+    </mat-card>
+</div>
+
+
+<div class="test">
+  <h1>UsersTypeCode API</h1>
+  <mat-card *ngFor="let userTypeCode of usersTypeCode" class="mb-10 backgroud accent" >
+      <strong>Name: </strong> {{ userTypeCode.name }},
+      <strong>Email: </strong> {{ userTypeCode.email }},
+      <strong>Phone: </strong> {{ userTypeCode.phone }},
+  </mat-card>
+</div>

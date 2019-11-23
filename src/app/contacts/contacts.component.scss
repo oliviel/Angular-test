@@ -1,0 +1,27 @@
+h1 {
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.test {
+  padding: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row * {
+  margin: 0 0.5rem;
+}
